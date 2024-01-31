@@ -1,0 +1,73 @@
+form {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color1);
+    border-radius: 10px;
+    border: 1px dashed var(--primary-color2);
+    padding: 40px;
+    width: 80%;
+}
+
+form div {
+    display: flex;
+}
+
+form div input {
+    width: 30px;
+    margin-bottom: 0;
+}
+
+form div label {
+    margin-top: 8px;
+}
+
+form label,div:last-of-type {
+    margin-bottom: 10px;
+}
+
+form input,select {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 25px;
+}
+
+form input[type="number"] {
+    width: 50px;
+}
+
+form > input[type="checkbox"]:last-of-type {
+    width: 30px;
+    height: 30px;
+}
+
+form button {
+    background-color: var(--primary-color3);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+form button:hover {
+    background-color: var(--primary-color2);
+}
+
+@media (max-width: 376px) {
+    main {
+        padding-top: 220px;
+    }
+
+    form {
+        width: auto;
+    }
+
+    form input,button {
+        width: 150px;
+    }
+}

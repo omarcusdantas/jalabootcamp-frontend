@@ -1,0 +1,29 @@
+.custom-list {
+    margin: 40px auto;
+}
+
+.custom-list input, button {
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.custom-list button:hover {
+    background-color: var(--secondary-color1);
+    cursor: pointer;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.custom-list li:nth-child(2n) {
+    background-color: var(--secondary-color1);
+}
+
+.custom-list li:nth-child(2n+1) {
+    background-color: var(--primary-color1);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/template.css">
+    <link rel="stylesheet" href="./src/css/form.css">
+    <link rel="stylesheet" href="./src/css/custom-list.css">
+    <title>This is a site</title>
+</head>
+<body>
+    <header>
+        <h1>This is the H1 title. It is inside the header</h1>
+    </header>
+    <main>
+        <h2>This is the H2 title</h2>
+        <p>This is a paragraph. You can write as much as you want.</p>
+        <p>This is another paragraph. Feel free to pass a message.</p>
+        <div class="lists">
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+            </ul>
+            <ol>
+                <li>First list item</li>
+                <li>Second list item</li>
+            </ol>
+        </div>
+        <form id="myForm">
+            <h2>This is a form</h2>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" minlength="4" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="4" required>
+        
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="prefer_not_to_say">Prefer not to say</option>
+            </select>
+
+            <label>Subscription:</label>
+            <div>
+                <input type="radio" id="subscription1" name="subscription" value="subscription1" required>
+                <label for="subscription1">Subscription 1</label>
+            </div>
+            <div>
+                <input type="radio" id="subscription2" name="subscription" value="subscription2">
+                <label for="subscription2">Subscription 2</label>
+            </div>
+            <div>
+                <input type="radio" id="subscription3" name="subscription" value="subscription3">
+                <label for="subscription3">Subscription 3</label>
+            </div>
+        
+            <label for="subscribe">Confirm you want to subscribe</label>
+            <input type="checkbox" id="subscribe" name="subscribe" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+        
+        <div class="custom-list">
+            <h2>Custom List</h2>
+            <input type="text" id="itemInput" placeholder="Enter item">
+            <button id="addItemBtn">Add Item</button>
+            <ul id="customList"></ul>
+        </div>
+    </main>
+    <footer>
+        <p>This is the footer. Made by Marcus.</p>
+    </footer>
+    <script src="./src/js/customList.js"></script>
+    <script src="./src/js/form.js"></script>
+</body>
+</html>
