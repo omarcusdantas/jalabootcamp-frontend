@@ -1,0 +1,41 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #ffd4d4;
+  margin-top: 40px;
+  width: 700px;
+}
+
+.counter button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #ffadad;
+  color: #ff0000;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+}
+
+.counter button:last-child {
+    width: 200px;
+    margin-left: 20px;
+}
+
+.counter button:hover {
+  background-color: #ff0000;
+  color: #ffadad;
+}
+
+.counter span {
+  font-weight: bold;
+  font-size: 100px;
+  padding: 0 40px;
+  color: #2c7900;
+}
