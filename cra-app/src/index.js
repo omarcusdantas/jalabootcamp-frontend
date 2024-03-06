@@ -1,8 +1,26 @@
+/* eslint-disable */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+pokemons = [ {
+  name: "Charizard",
+  type: "fire"
+},
+{
+  name: "Bulbasaur",
+  type: "grass"
+}, {
+  name: "Squirtle",
+  type: "water"
+}, {
+  name: "Pikachu",
+  type: "electric"
+}
+]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
