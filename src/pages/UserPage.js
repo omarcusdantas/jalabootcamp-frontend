@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { updateUser, deleteUser } from "./usersSlice";
+import { updateUser, deleteUser } from "../features/users/usersSlice";
 
 export default function UserPage() {
   const { userId } = useParams()

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { createUser } from "./usersSlice";
+import { createUser } from "../features/users/usersSlice";
 
 export default function SignupPage() {
   const users = useSelector((state) => state.users.users);
